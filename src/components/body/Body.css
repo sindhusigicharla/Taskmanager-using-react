@@ -1,0 +1,40 @@
+.task-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.input{
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgb(164, 159, 159);
+
+}
+.input:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+.body{
+    position: relative;
+    
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

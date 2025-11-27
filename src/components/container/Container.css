@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+    max-width: 70vw;
+    background-color: rgb(227, 227, 209);
+    position: absolute;
+    top: 50px;
+    min-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 9px 10px 21px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 10px 21px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 10px 21px -3px rgba(0,0,0,0.75);
+
+}
