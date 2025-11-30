@@ -1,10 +1,10 @@
 .filter-item{
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 12px 0;
+    padding: 10px 12px;
+    border-radius: 6px;
     background-color: rgb(164, 159, 159);
     cursor: pointer;
-
+    width: 100%;
 }
 .filter-item:hover{
      
@@ -12,4 +12,8 @@
     border: 1px solid rgba(81, 203, 238, 1);
     
     
+}
+
+@media (min-width: 700px){
+  .filter-item{ width: auto; }
 }

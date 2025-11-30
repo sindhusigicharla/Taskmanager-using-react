@@ -13,13 +13,14 @@ function Taskitem(props) {
     
     return(
         <div className='task-item'>
-            <li>
+            <li className='task-i'>
                 <input type="checkbox" checked={props.taskitem.iscompleted}
-                onChange={(e)=>updateTask(e)}/>
-                <span style={{textDecoration: props.taskitem.iscompleted ? "line-through" : "none"}}>{props.taskitem.name}</span>
+                onChange={(e)=>updateTask(e)} style={{marginRight:'10px'}}/>
+                <span style={{textDecoration: props.taskitem.iscompleted ? "line-through" : "none", margin:'10px'}}>{props.taskitem.name}</span>
+                <div onClick= {(e)=>deleteTask(e)}
+             className="delete-button" style={{marginRight:'10px'}}><DeleteIcon /></div>
                 </li> 
-            <div onClick= {(e)=>deleteTask(e)}
-             className="delete-button"><DeleteIcon /></div>
+            
 
         </div>
     )

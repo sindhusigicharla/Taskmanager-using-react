@@ -7,6 +7,10 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    padding: 20px;
+    align-items: stretch;
+    padding: 12px;
+}
+
+@media (max-width: 600px){
+  .task-list{ padding: 8px; }
 }

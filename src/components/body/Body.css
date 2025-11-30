@@ -8,10 +8,12 @@
 .input{
     margin-left: 20px;
     margin-right: 10px;
-    width: 70%;
-    height: 25px;
-    border-radius: 5px;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 36px;
+    border-radius: 6px;
     background-color: rgb(164, 159, 159);
+    padding: 6px 10px;
 
 }
 .input:focus{
@@ -22,7 +24,9 @@
 .button{
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    min-height: var(--tap-size);
 }
 .button:hover{
     background-color: grey;
@@ -37,4 +41,11 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+@media (max-width: 600px){
+  .task-input{ flex-direction: column; gap: 8px; align-items: stretch; }
+  .input{ margin: 0; }
+  .button{ width: 100%; }
+  .actions{ flex-direction: column; gap: 8px; }
 }

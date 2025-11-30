@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Mobile-first responsive base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root{
+  --container-padding: 16px;
+  --max-container-width: 900px;
+  --base-gap: 16px;
+  --tap-size: 44px;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px){
+  :root{ font-size: 15px; }
+}
+
+@media (min-width: 1200px){
+  :root{ font-size: 18px; }
+}
