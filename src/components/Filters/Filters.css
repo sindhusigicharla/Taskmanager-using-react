@@ -17,3 +17,29 @@
 @media (min-width: 700px){
   .filter-item{ width: auto; }
 }
+
+/* Container for desktop (visible by default) */
+.filters{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Mobile-only dropdown: hidden on larger screens */
+.filters-mobile{ display: none; }
+
+.filter-select{
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: rgb(164, 159, 159);
+  border: 1px solid transparent;
+}
+
+@media (max-width: 600px){
+  .filters{ display: none; }
+  .filters-mobile{ display: block; margin: 8px 0; }
+}
+
+/* Utility for screen-reader-only label */
+.sr-only{ position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }

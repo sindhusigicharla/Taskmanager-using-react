@@ -17,3 +17,8 @@
 @media (min-width: 700px){
   .clear-item{ width: auto; }
 }
+
+/* Hide entire Clear area on small screens (mobile) */
+@media (max-width: 600px){
+  .clear{ display: none; }
+}
